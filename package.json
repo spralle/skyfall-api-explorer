@@ -1,0 +1,52 @@
+{
+  "name": "skyfall-api-explorer",
+  "version": "0.0.0",
+  "description": "API explorer for skyfall-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha test --recursive -- -u exports -R spec",
+    "coverage-start": "istanbul cover node_modules/mocha/bin/_mocha test --recursive -- -u exports -R spec && start coverage/lcov-report/index.html",
+    "jshint": "jshint ./lib",
+    "jscs": "jscs -p google ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spralle/skyfall-api-explorer"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "explorer"
+  ],
+  "author": "Andreas Karlsson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spralle/skyfall-api-explorer/issues"
+  },
+  "homepage": "https://github.com/spralle/skyfall-api-explorer",
+  "devDependencies": {
+    "istanbul": "^0.3.2",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "should": "^4.1.0",
+    "supertest": "^0.15.0"
+  },
+  "dependencies": {
+    "express": "^4.10.3",
+    "semver": "^4.1.0"
+  },
+  "jshintConfig": {
+    "curly": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "expr": true,
+    "latedef": true,
+    "onevar": true,
+    "noarg": true,
+    "node": true,
+    "trailing": true,
+    "undef": true,
+    "unused": true
+  }
+}
